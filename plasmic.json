@@ -1,0 +1,85 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "4uQgydRGnmBfcLnmdCHPvu",
+      "projectApiToken": "OEqUrr1tKwFljrSITbaecPNyjBkWs20ewJYr4HMWGmGdHnmj8ffXq5XUTe8lSNBAibSDisiJiRBCo7YwcMOQ",
+      "projectName": "aurum-coffee-ui",
+      "version": "latest",
+      "cssFilePath": "plasmic/aurum_coffee_ui/plasmic.module.css",
+      "components": [
+        {
+          "id": "dLDPCP7qyS8A",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "4uQgydRGnmBfcLnmdCHPvu",
+          "renderModuleFilePath": "plasmic/aurum_coffee_ui/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../app/page.tsx"
+          },
+          "cssFilePath": "plasmic/aurum_coffee_ui/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/",
+          "rsc": {
+            "serverModulePath": "plasmic/aurum_coffee_ui/PlasmicHomepageServer.tsx",
+            "clientModulePath": "../app/page-client.tsx"
+          }
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/aurum_coffee_ui/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/aurum_coffee_ui/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "nfWkWkXvl5HA",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "ja4cULqmnTEN",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": []
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "preserveJsImportExtensions": false,
+  "nextjsConfig": {
+    "pagesDir": "../app"
+  },
+  "cliVersion": "0.1.359",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.359/dist/plasmic.schema.json"
+}
