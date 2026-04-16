@@ -10,3 +10,7 @@ export const sanity = createClient({
 export async function getBeans() {
   return await sanity.fetch(`*[_type == "product"]`)
 }
+
+export async function getHero() {
+  return await sanity.fetch(`*[_type == "hero"]`)
+}
